@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <nav>
+          <article class="headerLeftSize">
+            <figure>
+              <img src="./images/logo.svg" alt="Logo" />
+            </figure>
+
+            <ul class="nav-list">
+              <!--included drop down-->
+              <article
+                class="features-wrapper"
+                onmouseover="featuresDropdown()"
+                onmouseleave="hideFeaturesDropdown()"
+              >
+                <li>
+                  <span>Features</span>
+                  <img src="./images/icon-arrow-down.svg" alt="" />
+                </li>
+
+                <ul
+                  class="features-dropDown"
+                  onmouseleave="hideFeaturesDropdown()"
+                >
+                  <li>
+                    <img src="./images/icon-todo.svg" /><span>Todo List</span>
+                  </li>
+                  <li>
+                    <img src="./images/icon-calendar.svg" /><span
+                      >Calendar</span
+                    >
+                  </li>
+                  <li>
+                    <img src="./images/icon-reminders.svg" /><span
+                      >Reminders</span
+                    >
+                  </li>
+                  <li>
+                    <img src="./images/icon-planning.svg" /><span
+                      >Planning</span
+                    >
+                  </li>
+                </ul>
+              </article>
+
+              <article
+                class="company-wrapper"
+                onmouseover="companyDropdown()"
+                onmouseleave="hideFeaturesDropdown()"
+              >
+                <li>
+                  <span>Company</span>
+                  <img src="./images/icon-arrow-down.svg" alt="" />
+                </li>
+
+                <ul
+                  onmouseleave="hideFeaturesDropdown()"
+                  class="company-dropDown"
+                >
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+                </ul>
+              </article>
+              <!--included drop down-->
+              <li>
+                <span>Careers</span>
+              </li>
+              <li>
+                <span>About</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="headerBtns">
+            <button class="loginBtn btn">Login</button>
+
+            <button class="registerBtn btn">Register</button>
+          </article>
+
+          <article onclick="openMenu()" class="menu-icon">
+            <img class="icon" src="./images/icon-menu.svg" />
+          </article>
+        </nav>
+      </header>
+
+      <!-- aside -->
+      <section class="sideBarSection">
+        <aside class="sidebarMenu">
+          <article onclick="openMenu()" class="menu-icon">
+            <img class="icon" src="./images/icon-close-menu.svg" />
+          </article>
+
+          <ul class="sideBar-link">
+            <li onclick="sidebarFeatures()">
+              <article>
+                <span>Features</span>
+                <img src="./images/icon-arrow-down.svg" />
+              </article>
+            </li>
+
+            <!-- Features dropdown -->
+            <ul class="aside-features-dropdown">
+              <li>
+                <img src="./images/icon-todo.svg" /><span>Todo List</span>
+              </li>
+              <li>
+                <img src="./images/icon-calendar.svg" /><span>Calendar</span>
+              </li>
+              <li>
+                <img src="./images/icon-reminders.svg" /><span>Reminders</span>
+              </li>
+              <li>
+                <img src="./images/icon-planning.svg" /><span>Planning</span>
+              </li>
+            </ul>
+            <!-- Features dropdown end-->
+
+            <li onclick="sidebarCompany()">
+              <article>
+                <span>Company</span>
+                <img src="./images/icon-arrow-down.svg" />
+              </article>
+            </li>
+
+            <!-- company dropdown -->
+            <ul class="aside-company-dropdown">
+              <li>History</li>
+              <li>Out Team</li>
+              <li>Blog</li>
+            </ul>
+            <!-- company dropdown end-->
+
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+
+          <article class="asideBtns">
+            <button class="asideLoginBtn btn">Login</button>
+
+            <button class="asideRegisterBtn btn">Register</button>
+          </article>
+        </aside>
+      </section>
+      <!-- aside -->
+
+      <!-- hero section -->
+      <section class="hero">
+        <!-- hero left side -->
+        <div class="heroLeft">
+          <h1>
+            Make <br />
+            remote work
+          </h1>
+
+          <p>
+            Get your team in sync,no matter your location. <br />Streamline
+            processes,create team rituals,and <br />
+            watch productivity soar.
+          </p>
+
+          <button class="learnBtn btn">Learn more</button>
+
+          <article>
+            <img src="./images/client-databiz.svg" />
+            <img src="./images/client-audiophile.svg" />
+            <img src="./images/client-meet.svg" />
+            <img src="./images/client-maker.svg" />
+          </article>
+        </div>
+
+        <!-- hero right side -->
+        <div class="heroRight">
+          <!-- <img src="./images/image-hero-desktop.png" class="hero-img" /> -->
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
